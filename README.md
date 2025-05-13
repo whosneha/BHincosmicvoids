@@ -4,6 +4,13 @@ This repository provides a set of Python tools for studying black holes in cosmi
 
 The tool allows for the computation and visualization of key physical quantities related to black holes and cosmic filaments. It uses theoretical models for density profiles, mass accumulation, and horizon formation in voids to generate insightful plots that reiterate the key points from the paper. Users can modify parameters, visualize data, and experiment with different conditions in a flexible and accessible way.
 
+## Paper Reference
+
+This tool is based on the paper:
+
+**Lustosa et al. (2025), Black Holes in Cosmic Voids**. The models used in this project are directly inspired by the theoretical concepts presented in this paper, which explores black holes' behavior in the underdense regions of the universe, particularly focusing on cosmic voids. The paper discusses the formation of black holes in these regions, their associated thermodynamics, and the effects of various parameters on the formation of black hole horizons.
+
+
 ## Features
 - **Mass Function**: Computes the mass within a given radius for a cosmic void using an analytic density profile.
 - **Horizon Condition Function**: Plots the horizon formation function based on mass and radius.
@@ -54,11 +61,6 @@ ho_0$$.
 
 4. Modify the parameters in the `main()` function to test different physical setups, such as adjusting the scale radius $$r_s$$, virial radius $$r_v$$, contrast parameter $$\delta_c$$, and the mass for horizon formation.
 
-## Paper Reference
-
-This tool is based on the paper:
-
-**Lustosa et al. (2025), Black Holes in Cosmic Voids**. The models used in this project are directly inspired by the theoretical concepts presented in this paper, which explores black holes' behavior in the underdense regions of the universe, particularly focusing on cosmic voids. The paper discusses the formation of black holes in these regions, their associated thermodynamics, and the effects of various parameters on the formation of black hole horizons.
 
 ## Example Usage
 
