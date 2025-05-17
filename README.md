@@ -31,11 +31,11 @@ ho_0$.
 - **Purpose**: It illustrates how density changes with radius, as well as how different values of $\delta_c$ affect the density profile in cosmic voids.
 
 ### 3. **'f_fixed_mass'**
-- **What it shows**: This plot represents the **horizon condition function** $$f(r) = 1 - $\frac{2M}{r}$ for a fixed mass $M$ (e.g., $M = 10$).
+- **What it shows**: This plot represents the **horizon condition function** $f(r) = 1 - $\frac{2M}{r}$ for a fixed mass $M$ (e.g., $M = 10$).
 - **Purpose**: It helps to understand where the horizon might form, given a specific mass, and is useful for studying potential regions of horizon formation.
 
 ### 4. **'critical_mass'**
-- **What it shows**: This plot shows the **mass required** to form a horizon at each radius, specifically plotting $M(r)$ such that $f(r) = 0$.
+- **What it shows**: This plot shows the **mass required** to form to ensure that the is thermal equilibrium at the boundary of the Schwarschild and DeSitter Horizon, specifically plotting $M$ at different values of $\detla_c$.
 - **Purpose**: This is crucial for understanding the conditions under which a black hole’s event horizon forms, based on the mass distribution in the cosmic void.
 
 ## How to Use
@@ -46,9 +46,9 @@ ho_0$.
    cd black-holes-in-cosmic-voids
    ```
 
-2. Install the required dependencies:
+2. Install the required dependencies and libraries required for the notebook to run. Please insure that all libraries in the import block have been installed other wise follow the basc example:
    ```bash
-   pip install -r requirements.txt
+   pip install numpy
    ```
 
 3. Run the `main()` function with different parameters to generate plots. For example:
@@ -71,12 +71,24 @@ Here’s an example usage of the `main()` function to plot Hawking temperature a
 main(plots=('temp', 'density'))
 
 # Mass horizon function for fixed M = 10:
-main(plots=('f_fixed_mass',), r_s=80, r_v=100, rho_o=3e-5,
-     delta_c_values=[-0.90, -0.95, -0.99], r_range=(0.1, 80), r_points=300)
+main(
+    plots=('density',),
+    r_s=80,
+    r_v=100,
+    rho_o=0.00003,
+    r_range=(1, 200)
+)
 
 # Plot critical mass required to form horizons at different radii:
-main(plots=('critical_mass',), r_s=80, r_v=100, rho_o=3e-5,
-     delta_c_values=[-0.90], r_range=(0.1, 150))
+main(
+    plots=('f_fixed_mass',),
+    r_s=80,
+    r_v=100,
+    rho_o=3e-5,
+    r_range=(1, 80),
+    M_fixed=10
+    
+)
 ```
 
 ## License
