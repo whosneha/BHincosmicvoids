@@ -25,17 +25,17 @@ The tool allows users to generate various plots based on the theoretical model. 
 - **Purpose**: This helps to visualize how the temperature and entropy of black holes change as a function of their size, which is critical for understanding the thermodynamics of black holes in cosmic voids.
 
 ### 2. **'density'**
-- **What it shows**: This plot shows the **density profile** $$
-ho(r)$$ for multiple values of the contrast parameter ($$\delta_c$$). A dashed line represents the baseline density $$
-ho_0$$.
-- **Purpose**: It illustrates how density changes with radius, as well as how different values of $$\delta_c$$ affect the density profile in cosmic voids.
+- **What it shows**: This plot shows the **density profile** $
+ho(r)$ for multiple values of the contrast parameter ($\delta_c$). A dashed line represents the baseline density $
+ho_0$.
+- **Purpose**: It illustrates how density changes with radius, as well as how different values of $\delta_c$ affect the density profile in cosmic voids.
 
 ### 3. **'f_fixed_mass'**
-- **What it shows**: This plot represents the **horizon condition function** $$f(r) = 1 - rac{2M}{r}$$ for a fixed mass $$M$$ (e.g., $$M = 10$$).
+- **What it shows**: This plot represents the **horizon condition function** $$f(r) = 1 - $\frac{2M}{r}$ for a fixed mass $M$ (e.g., $M = 10$).
 - **Purpose**: It helps to understand where the horizon might form, given a specific mass, and is useful for studying potential regions of horizon formation.
 
 ### 4. **'critical_mass'**
-- **What it shows**: This plot shows the **mass required** to form a horizon at each radius, specifically plotting $$M(r)$$ such that $$f(r) = 0$$.
+- **What it shows**: This plot shows the **mass required** to form a horizon at each radius, specifically plotting $M(r)$ such that $f(r) = 0$.
 - **Purpose**: This is crucial for understanding the conditions under which a black hole’s event horizon forms, based on the mass distribution in the cosmic void.
 
 ## How to Use
